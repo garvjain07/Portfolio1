@@ -4,20 +4,41 @@ import { ExternalLink, Code, Folder } from 'lucide-react';
 const Projects: React.FC = () => {
   const projects = [
     {
+      title: 'UniConnect',
+      description: 'A full-stack campus marketplace with real-time chat and AI-powered recommendations.',
+      technologies: ['React', 'Express.js', 'MongoDB', 'Socket.IO', 'FastAPI'],
+      details: 'Campus marketplace featuring real-time chat, moderation system, bill sharing, and ML-powered recommendations.',
+      icon: '🎓',
+      color: 'from-pink-500 to-rose-600',
+      link: 'https://github.com/garvjain07/UNICONNECT'
+    },
+    {
+      title: 'Stock Maintenance System',
+      description: 'A comprehensive stock management and billing system for inventory control.',
+      technologies: ['React 18', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
+      details: 'Complete stock maintenance system with integrated billing functionality for efficient inventory tracking and management.',
+      icon: '📦',
+      color: 'from-indigo-500 to-blue-600',
+      link: 'https://github.com/garvjain07/Stock_Management_System',
+      deployLink: 'https://stock-management-system-bice-theta.vercel.app/login'
+    },
+    {
+      title: 'Tic Tac Toe Game',
+      description: 'A modern tic-tac-toe game with AI opponent using minimax algorithm.',
+      technologies: ['React 18', 'Vite', 'CSS3', 'JavaScript', 'AI Algorithm'],
+      details: 'Features Player vs Player and Player vs Computer modes with three difficulty levels. Built with React and minimax algorithm with alpha-beta pruning for optimal AI gameplay.',
+      icon: '🎮',
+      color: 'from-blue-500 to-cyan-600',
+      link: 'https://github.com/garvjain07/tic-tac-toe',
+      deployLink: 'https://tic-tac-toe-chi-lilac.vercel.app/'
+    },
+    {
       title: 'Currency Converter',
       description: 'A comprehensive currency conversion application with real-time exchange rates.',
       technologies: ['Frontend Development', 'API Integration', 'JavaScript', 'CSS'],
       details: 'Developed both frontend interface and backend APIs for seamless currency conversion with live rates.',
       icon: '💱',
       color: 'from-green-500 to-emerald-600'
-    },
-    {
-      title: 'Tic Tac Toe Game',
-      description: 'An interactive and engaging tic-tac-toe game with modern UI design.',
-      technologies: ['JavaScript', 'HTML', 'CSS', 'Game Logic'],
-      details: 'Built an interactive frontend-based game with smooth animations and responsive design.',
-      icon: '🎮',
-      color: 'from-blue-500 to-cyan-600'
     },
     {
       title: 'Library Management System',
@@ -101,10 +122,35 @@ const Projects: React.FC = () => {
                     <Folder className="w-4 h-4 mr-1" />
                     Project
                   </div>
-                  <button className="flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
-                    <span className="text-sm font-medium">View Details</span>
-                    <ExternalLink className="w-4 h-4 ml-2" />
-                  </button>
+                  <div className="flex gap-2">
+                    {project.deployLink && (
+                      <a
+                        href={project.deployLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center px-4 py-2 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-full hover:from-green-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
+                      >
+                        <span className="text-sm font-medium">Live Demo</span>
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </a>
+                    )}
+                    {project.link ? (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
+                      >
+                        <span className="text-sm font-medium">GitHub</span>
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </a>
+                    ) : (
+                      <button className="flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
+                        <span className="text-sm font-medium">View Details</span>
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </button>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>

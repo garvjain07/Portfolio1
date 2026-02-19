@@ -7,37 +7,37 @@ const Skills: React.FC = () => {
       title: 'Programming Languages',
       icon: Code,
       color: 'from-blue-500 to-blue-600',
-      skills: ['C', 'C++', 'Java', 'Python', 'JavaScript']
+      skills: ['C', 'C++', 'Java', 'Python', 'JavaScript', 'SQL']
     },
     {
       title: 'Web Development',
       icon: Globe,
       color: 'from-green-500 to-green-600',
-      skills: ['HTML', 'CSS', 'React.js', 'Node.js']
+      skills: ['HTML', 'CSS', 'Tailwind CSS', 'React.js', 'Node.js', 'Express.js', 'REST API']
     },
     {
       title: 'Database Management',
       icon: Database,
       color: 'from-purple-500 to-purple-600',
-      skills: ['MySQL', 'MongoDB']
+      skills: ['MySQL', 'MongoDB', 'MongoDB Atlas']
     },
     {
       title: 'Tools & Platforms',
       icon: Tool,
       color: 'from-orange-500 to-orange-600',
-      skills: ['Git/GitHub', 'VS Code', 'Figma']
+      skills: ['Git/GitHub', 'VS Code', 'Vercel', 'Postman', 'Figma']
     },
     {
       title: 'Core Concepts',
       icon: Brain,
       color: 'from-red-500 to-red-600',
-      skills: ['Data Structures & Algorithms', 'OOP', 'Operating Systems']
+      skills: ['Data Structures & Algorithms', 'OOP', 'DBMS', 'Operating Systems', 'SDLC', 'System Design']
     },
     {
       title: 'Areas of Interest',
       icon: Zap,
       color: 'from-cyan-500 to-cyan-600',
-      skills: ['Web Development', 'Problem Solving']
+      skills: ['Web Development', 'Problem Solving', 'Data Analysis', 'Machine Learning']
     }
   ];
 

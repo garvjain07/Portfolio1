@@ -5,6 +5,7 @@ import About from './components/About.tsx';
 import Education from './components/Education.tsx';
 import Projects from './components/Projects.tsx';
 import Skills from './components/Skills.tsx';
+import Certificates from './components/Certificates.tsx';
 import Achievements from './components/Achievements.tsx';
 import Contact from './components/Contact.tsx';
 import Footer from './components/Footer.tsx';
@@ -21,6 +22,7 @@ function App() {
         <Education />
         <Projects />
         <Skills />
+        <Certificates />
         <Achievements />
         <Contact />
       </main>

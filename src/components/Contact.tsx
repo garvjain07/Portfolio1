@@ -131,7 +131,7 @@ const Contact: React.FC = () => {
                   <div className="text-sm text-gray-300">Languages</div>
                 </div>
                 <div className="text-center p-4 bg-white/5 rounded-lg">
-                  <div className="text-2xl font-bold text-green-400">2+</div>
+                  <div className="text-2xl font-bold text-green-400">3+</div>
                   <div className="text-sm text-gray-300">Years Learning</div>
                 </div>
                 <div className="text-center p-4 bg-white/5 rounded-lg">
