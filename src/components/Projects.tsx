@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Code, Folder } from 'lucide-react';
+import { ExternalLink, Code, Folder, Search, Calculator } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const projects = [
@@ -10,7 +10,28 @@ const Projects: React.FC = () => {
       details: 'Campus marketplace featuring real-time chat, moderation system, bill sharing, and ML-powered recommendations.',
       icon: '🎓',
       color: 'from-pink-500 to-rose-600',
-      link: 'https://github.com/garvjain07/UNICONNECT'
+      link: 'https://github.com/garvjain07/UNICONNECT',
+      deployLink: 'https://uniconnect-campus.vercel.app/'
+    },
+    {
+      title: 'FaceFind - AI Face Recognition Photo Search Platform',
+      description: 'Upload event photos and instantly find only your photos using AI-based face recognition.',
+      technologies: ['React.js', 'Tailwind CSS', 'Python FastAPI', 'OpenCV', 'face_recognition (dlib)', 'SQLite'],
+      details: 'Designed for event photo retrieval workflows, allowing users to scan via webcam or upload a selfie to search photos quickly and accurately.',
+      icon: <Search className="w-8 h-8 text-white" />,
+      color: 'from-orange-500 to-red-600',
+      link: 'https://github.com/garvjain07/Face-Finder-AI-Recognition',
+      deployLink: 'https://face-finder-ai-recognition.vercel.app/'
+    },
+    {
+      title: 'Routine Planner',
+      description: 'A full-stack productivity app to plan days, track habits, manage goals, and visualize progress.',
+      technologies: ['React 18', 'Vite 5', 'Tailwind CSS 3', 'Node.js', 'Express 4', 'MongoDB', 'JWT'],
+      details: 'Includes dashboard, daily planner, habit streak tracker, goals, journal, meal & workout modules, and analytics charts in a cyberpunk-inspired UI.',
+      icon: '🗓️',
+      color: 'from-purple-500 to-violet-600',
+      link: 'https://github.com/garvjain07/Routine_Planner',
+      deployLink: 'https://routine-planner-three.vercel.app/login'
     },
     {
       title: 'Stock Maintenance System',
@@ -33,28 +54,14 @@ const Projects: React.FC = () => {
       deployLink: 'https://tic-tac-toe-chi-lilac.vercel.app/'
     },
     {
-      title: 'Currency Converter',
-      description: 'A comprehensive currency conversion application with real-time exchange rates.',
-      technologies: ['Frontend Development', 'API Integration', 'JavaScript', 'CSS'],
-      details: 'Developed both frontend interface and backend APIs for seamless currency conversion with live rates.',
-      icon: '💱',
-      color: 'from-green-500 to-emerald-600'
-    },
-    {
-      title: 'Library Management System',
-      description: 'A complete library management solution for efficient book and member tracking.',
-      technologies: ['Python', 'Database Design', 'GUI Development'],
-      details: 'Comprehensive system for managing books, members, and library operations with Python.',
-      icon: '📚',
-      color: 'from-purple-500 to-violet-600'
-    },
-    {
-      title: 'Expense Tracker Management',
-      description: 'A robust expense tracking application for personal financial management.',
-      technologies: ['Java', 'OOP', 'Database Management', 'UI Design'],
-      details: 'Built a feature-rich expense management system using Java with intuitive user interface.',
-      icon: '💰',
-      color: 'from-orange-500 to-red-600'
+      title: 'Scientific Calculator',
+      description: 'A feature-rich scientific calculator for advanced arithmetic and mathematical operations.',
+      technologies: ['JavaScript', 'HTML5', 'CSS3', 'Math Functions', 'Responsive UI'],
+      details: 'Built an interactive scientific calculator with support for advanced operations, clean UI interactions, and responsive behavior across devices.',
+      icon: <Calculator className="w-8 h-8 text-white" />,
+      color: 'from-green-500 to-emerald-600',
+      link: 'https://github.com/garvjain07/Scientific-Calculator',
+      deployLink: 'https://scientific-calculator-xi-silk.vercel.app/'
     }
   ];
 
@@ -79,7 +86,7 @@ const Projects: React.FC = () => {
               <div className="p-8">
                 {/* Project Header */}
                 <div className="flex items-center mb-6">
-                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${project.color} flex items-center justify-center text-2xl shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`w-16 h-16 aspect-square shrink-0 rounded-2xl bg-gradient-to-r ${project.color} flex items-center justify-center text-2xl shadow-lg group-hover:scale-110 transition-transform duration-300`}>
                     {project.icon}
                   </div>
                   <div className="ml-4">
